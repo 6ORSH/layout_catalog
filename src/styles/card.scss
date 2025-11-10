@@ -4,6 +4,7 @@ $white-color: #fff;
 $primary-text-color: #060b35;
 $secondary-text-color: #616070;
 $card-title-color: #34568b;
+$card-border-color: #f3f3f3;
 $font-weight-light: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
@@ -15,14 +16,15 @@ $line-height-small: 14px;
 $line-height-medium: 18px;
 $line-height-large: 16px;
 $card-width: 200px;
+$border-radius: 5px;
 
 .card {
   box-sizing: border-box;
   width: $card-width;
   height: 408px;
   background-color: $white-color;
-  border-radius: 5px;
-  border: 1px solid #f3f3f3;
+  border-radius: $border-radius;
+  border: 1px solid $card-border-color;
   transition:
     transform 0.3s ease,
     color 0.3s ease;
@@ -96,7 +98,7 @@ $card-width: 200px;
     font-size: $font-size-large;
     line-height: $line-height-large;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: $border-radius;
     background-color: $button-color;
     color: $white-color;
     transition:
