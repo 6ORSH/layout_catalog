@@ -3,13 +3,14 @@
 $vertical-padding: 50px;
 $horizontal-padding: 40px;
 $columns-number: 4;
-$gap-size: 46px;
+$gap-vertical: 48px;
+$gap-horizontal: 46px;
 
 .catalog {
   display: grid;
-  gap: $gap-size;
+  gap: $gap-vertical $gap-horizontal;
   grid-template-columns: 1fr;
-  max-width: $horizontal-padding * 2 + $card-width * $columns-number + $gap-size * ($columns-number - 1);
+  max-width: $horizontal-padding * 2 + $card-width * $columns-number + $gap-horizontal * ($columns-number - 1);
   padding: $vertical-padding $horizontal-padding;
 
   @media only screen and (min-width: 488px) {

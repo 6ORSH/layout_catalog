@@ -3,6 +3,7 @@ $button-color: #00acdc;
 $white-color: #fff;
 $primary-text-color: #060b35;
 $secondary-text-color: #616070;
+$card-title-color: #34568b;
 $font-weight-light: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
@@ -49,6 +50,7 @@ $card-width: 200px;
     font-size: $font-size-medium;
     line-height: $line-height-medium;
     color: $primary-text-color;
+    transition: color 0.3s ease;
   }
 
   &__product-code {
@@ -127,7 +129,7 @@ $card-width: 200px;
     transform: scale(1.2);
 
     &__title {
-      color: #34568b;
+      color: $card-title-color;
     }
   }
 }
